@@ -1,5 +1,5 @@
 node {
   stage ('docker run') {
-    docker run nginx:latest
+    sh 'docker run nginx:latest'
   }
 }	
