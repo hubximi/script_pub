@@ -10,7 +10,6 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'build/libs/test/test.jar', fingerprint: true
             junit 'build/libs/test/test.xml'
            }
         }
