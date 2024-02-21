@@ -11,6 +11,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: '**/*.html', fingerprint: true
             junit 'build/reports/**/*.xml'
+            }
         }
     }
 }
