@@ -10,8 +10,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'build/libs/**/*.txt', fingerprint: true
-            junit 'build/libs/**/*.xml'
+            archiveArtifacts artifacts: 'build/libs/test/test.txt', fingerprint: true
+            junit 'build/libs/test/test.xml'
            }
         }
 }
