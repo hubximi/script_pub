@@ -10,7 +10,7 @@ pipeline {
     }
     post {
         always {
-            junit 'build/reports/**/*.xml'
+            archiveArtifacts artifacts: '**/*.txt, fingerprint: true
         }
     }
 }
