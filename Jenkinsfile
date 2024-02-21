@@ -9,7 +9,7 @@ pipeline {
         }
       stage('archive') {
         steps {
-            archiveArtifacts artifacts: 'logs'
+            archiveArtifacts artifacts: 'result.html'
         }
       }
     }
